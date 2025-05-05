@@ -1,1 +1,7 @@
-<p>emom-timer works!</p>
+<h1>EMOM Timer</h1>
+<label>Number of rounds:</label>
+<input type="number">
+<div>
+    <button (click)="startTimer()" [disabled]="timerRunning">Start Timer</button>
+    <h2 *ngIf="timerRunning">Seconds Left: {{ secondsLeft }}</h2>
+</div>
